@@ -180,12 +180,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Token Burner</title>
+        <title>DAPP to mint and burn ROHI MEME coin</title>
         <meta name="description" content="burn-Dapp" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to BURNER DAPP!</h1>
+          <h1 className={styles.title}>Welcome to ROHI MEME coin</h1>
           {walletConnected ? (
             <div>
               <div className={styles.description}>
@@ -200,20 +200,20 @@ export default function Home() {
                 {/* Format Ether helps us in converting a BigNumber to string */}
                 Overall{" "}
                 {parseFloat(utils.formatEther(tokensMinted)).toLocaleString()}{" "}
-                have been minted!!!
+                have been minted!
               </div>
               {renderButton()}
             </div>
           ) : (
             <button onClick={connectWallet} className={styles.button}>
-              Connect your wallet
+              Connect Browser wallet
             </button>
           )}
         </div>
       </div>
       <footer className={styles.footer}>
         <p className="mt-4">
-          &copy; 2023 Meme Token. All Rights Reserved.
+          All Rights Reserved to @rolli122.
         </p>
       </footer>
     </div>
